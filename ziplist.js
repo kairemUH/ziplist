@@ -13,7 +13,7 @@ function zipList(array1, array2) {
 }
 
 function zipListTheSimpleWay(array1, array2) {
-  return _.flatten(_.map(array1, function (item, index) { return [item, array2[index]]; }));
+  return _.flatten(_.zip(array1, array2));
 }
 
 const testArr1 = ['a', 'b', 'c'];
